@@ -13,18 +13,20 @@ const ClearCosts = (props) => {
     hidePopup()
   }
 
-  if (props.costs.length > 0) {
-    return (
-      <div className='new-cost '>
-        <button onClick={showPopup}>Clear all expenses</button>
-        <Popup isVisible={isVisible}>
-          {isVisible && (
-            <ButtonDelete clear={allClearCostsHandler} cancel={hidePopup} />
-          )}
-        </Popup>
-      </div>
-    )
-  }
+  return (
+    <>
+      {props.costs.length > 0 && (
+        <div className='new-cost '>
+          <button onClick={showPopup}>Clear all expenses</button>
+          <Popup isVisible={isVisible}>
+            {isVisible && (
+              <ButtonDelete clear={allClearCostsHandler} cancel={hidePopup} />
+            )}
+          </Popup>
+        </div>
+      )}
+    </>
+  )
 }
 
 export default ClearCosts

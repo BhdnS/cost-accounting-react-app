@@ -15,6 +15,7 @@ const Costs = (props) => {
   const filterYear = props.costs.filter(
     (v) => v.date.getFullYear() === Number(selectedYear)
   )
+
   return (
     <>
       <Card className='costs'>

@@ -4,6 +4,7 @@ const CostFilter = (props) => {
   const yearChangeHandler = (e) => {
     props.onChangeYear(e.target.value)
   }
+
   return (
     <div className='costs-filter'>
       <div className='costs-filter__control'>
