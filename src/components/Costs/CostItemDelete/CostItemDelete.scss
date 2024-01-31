@@ -1,0 +1,17 @@
+.cost-button {
+  font-size: 1.25rem;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid #ececec;
+  background-color: #2a5b84;
+  color: #fefae1;
+  border-radius: 12px;
+  margin-right: 3px;
+}
+
+.cost-button:hover,
+.cost-button:active {
+  background-color: #2a5c84b2;
+  border-color: #2a5c84b2;
+}
